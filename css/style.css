@@ -1,0 +1,481 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  --black: #01010e;
+  --white: #f9f9f9;
+  --blue: #6d1c06;
+  --whitet: #abd8bf;
+}
+
+body {
+  color: var(--white);
+  background: var(--black);
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .hemburger {
+  display: none;
+  width: 40px;
+  height: 20px;
+  margin-left: 5px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+body header .hemburger div {
+  display: none;
+  margin-top: 4px;
+  padding: 3px;
+  width: 40px;
+  background-color: white;
+}
+
+body header .hemburgerclose {
+  display: block;
+  width: 40px;
+  height: 20px;
+  margin-left: 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+body header .hemburgerclose div {
+  display: block;
+  margin-top: 4px;
+  padding: 3px;
+  width: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+body header .hemburgerclose #topl {
+  width: 25px;
+  margin-left: 20px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+body header .hemburgerclose #middlel {
+  display: block;
+  width: 42px;
+}
+
+body header .hemburgerclose #bottoml {
+  width: 25px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  margin-left: 20px;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #100e0e;
+  padding: 6px;
+  font-size: 1.5em;
+  margin-bottom: 4px;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+  border-radius: 10px;
+}
+
+body header nav a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -webkit-box-shadow: 0 0 15px white inset;
+          box-shadow: 0 0 15px white inset;
+  border-radius: 10px;
+}
+
+body header .navbar ul {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .navbar ul li {
+  list-style: none;
+  margin-left: 4px;
+}
+
+body header .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 0.5em;
+}
+
+body header .navbar ul li:hover {
+  -webkit-box-shadow: 0 0 40px white inset;
+          box-shadow: 0 0 40px white inset;
+  border-radius: 10px;
+  border: 2px white;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-top: 19vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px white inset;
+          box-shadow: 0 0 15px white inset;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body main .rightarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5%;
+}
+
+body main .rightarea .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .rightarea .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+body main .rightarea .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .rightarea .line #right {
+  display: block;
+  margin-top: 5%;
+  padding-bottom: 1%;
+  padding-right: 35%;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 2px white inset;
+          box-shadow: 1px 2px 2px white inset;
+}
+
+body main .rightarea .downarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .rightarea .downarea .rightside,
+body main .rightarea .downarea .leftside {
+  margin-top: 5%;
+  text-align: center;
+}
+
+body main .rightarea .downarea .bottommiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .rightarea .downarea .bottommiddle .top,
+body main .rightarea .downarea .bottommiddle .bottom {
+  display: block;
+  height: 4vh;
+  width: 0;
+  border: 1.2px solid white;
+  -webkit-box-shadow: 1px 2px 1px white inset;
+          box-shadow: 1px 2px 1px white inset;
+}
+
+body main .rightarea .downarea .bottommiddle .center {
+  margin: 10px 0 10px 0;
+}
+
+body main .rightarea .downarea .bottommiddle .center a {
+  background: black;
+  -webkit-box-shadow: 0 0 50px white inset;
+          box-shadow: 0 0 50px white inset;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #121111;
+  padding: 3px 10px 3px 10px;
+}
+
+body main .leftarea {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 3%;
+  padding: 4% 1% 4% 1%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #2d37f7;
+  -webkit-box-shadow: 0 0 15px #f4f4f6;
+          box-shadow: 0 0 15px #f4f4f6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body main .leftarea .head {
+  text-align: center;
+  margin: 5%;
+}
+
+body main .leftarea .form label {
+  font-weight: bold;
+}
+
+body main .leftarea .form .goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+body main .leftarea .form .goal select {
+  border-radius: 5px;
+  padding: 3px;
+  background: #847c7c;
+  color: #0c0c0c;
+  -webkit-box-shadow: 0 0 15px white inset;
+          box-shadow: 0 0 15px white inset;
+  font-weight: bold;
+}
+
+body main .leftarea .form .goal select option {
+  background: #847c7c;
+  color: black;
+  font-weight: bold;
+}
+
+body main .leftarea .form .pc_confirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+body main .leftarea .form .pc_confirmation #pc_c {
+  margin-top: 2px;
+}
+
+body main .leftarea .form .expected_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+body main .leftarea .form .expected_time input,
+body main .leftarea .form .expected_time select {
+  border-radius: 5px;
+  max-width: 25%;
+  padding: 3px;
+  background: #847c7c;
+  color: black;
+  -webkit-box-shadow: 0 0 15px white inset;
+          box-shadow: 0 0 15px white inset;
+  font-weight: bold;
+}
+
+body main .leftarea .form .expected_time input option,
+body main .leftarea .form .expected_time select option {
+  background: #847c7c;
+  color: black;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+}
+
+body main .leftarea .getpoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10%;
+}
+
+body main .leftarea .getpoint a {
+  background: #3d3a3a;
+  color: #f7f3f3;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+}
+
+body .darkmode {
+  margin-top: 5%;
+  margin-left: 95%;
+  padding: 15px 8px 15px 8px;
+  font-weight: bold;
+  border-radius: 25px;
+  color: var(--white);
+  background: var(--black);
+  -webkit-box-shadow: 0 0 10px white inset;
+          box-shadow: 0 0 10px white inset;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+body .lightmode {
+  margin-top: 5%;
+  margin-left: 95%;
+  padding: 15px 8px 15px 8px;
+  font-weight: bold;
+  border-radius: 25px;
+  color: var(--blue);
+  background: var(--whitet);
+  -webkit-box-shadow: 0 0 10px #0f0e0e inset;
+          box-shadow: 0 0 10px #0f0e0e inset;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@media (max-width: 1000px) {
+  body header .hemburger {
+    display: block;
+  }
+  body header .hemburger div {
+    display: block;
+  }
+  body header .navbar {
+    display: none;
+    margin-top: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main {
+    max-width: 90%;
+  }
+  body main .rightarea {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
