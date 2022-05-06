@@ -433,10 +433,10 @@ body main .leftarea .getpoint a {
 
 body .darkmode {
   display: block;
-  width: 8%;
+  width: 60px;
   margin-top: 5%;
   margin-left: 95%;
-  padding: 20px 8px 20px 8px;
+  padding: 20px 8px 20px 08px;
   font-weight: bold;
   border-radius: 30px;
   color: var(--white);
@@ -451,7 +451,7 @@ body .darkmode {
 
 body .lightmode {
   display: block;
-  width: 8%;
+  width: 60px;
   margin-top: 5%;
   margin-left: 95%;
   padding: 20px 8px 20px 8px;
