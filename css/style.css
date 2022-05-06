@@ -91,6 +91,7 @@ body header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100%;
   border: 2px white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -184,7 +185,7 @@ body main .rightarea {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 5%;
+  margin: 4%;
 }
 
 body main .rightarea .heading {
@@ -297,7 +298,7 @@ body main .leftarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 3%;
+  margin-right: 2.5%;
   padding: 4% 1% 4% 1%;
   max-width: 100%;
   border-radius: 10px;
@@ -450,12 +451,33 @@ body .lightmode {
   transition: 1s ease;
 }
 
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  border: 2px white;
+  margin-top: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #100e0e;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+}
+
 @media (max-width: 1000px) {
   body header .hemburger {
     display: block;
   }
   body header .hemburger div {
     display: block;
+  }
+  body header .nav {
+    max-width: 100%;
   }
   body header .navbar {
     display: none;
@@ -476,6 +498,14 @@ body .lightmode {
   }
   body main .rightarea {
     display: none;
+  }
+  body .darkmode {
+    margin-left: 5%;
+    margin-top: 6%;
+  }
+  body .lightmode {
+    margin-left: 85%;
+    margin-top: 6%;
   }
 }
 /*# sourceMappingURL=style.css.map */
