@@ -13,6 +13,18 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
   color: var(--white);
   background: var(--black);
 }
@@ -420,11 +432,13 @@ body main .leftarea .getpoint a {
 }
 
 body .darkmode {
+  display: block;
+  width: 8%;
   margin-top: 5%;
   margin-left: 95%;
-  padding: 15px 8px 15px 8px;
+  padding: 20px 8px 20px 8px;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 30px;
   color: var(--white);
   background: var(--black);
   -webkit-box-shadow: 0 0 10px white inset;
@@ -436,11 +450,13 @@ body .darkmode {
 }
 
 body .lightmode {
+  display: block;
+  width: 8%;
   margin-top: 5%;
   margin-left: 95%;
-  padding: 15px 8px 15px 8px;
+  padding: 20px 8px 20px 8px;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 30px;
   color: var(--blue);
   background: var(--whitet);
   -webkit-box-shadow: 0 0 10px #0f0e0e inset;
@@ -458,6 +474,7 @@ body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 5px;
   max-width: 100%;
   border: 2px white;
   -webkit-box-align: center;
