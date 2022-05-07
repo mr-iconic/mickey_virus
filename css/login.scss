@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --black: #01010e;
+    --white: #f9f9f9;
+    --blue: #6d1c06;
+    --whitet: #1d858b;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+     min-height: 100vh;
+     width: 100%;
+    color: (var(--white));
+    background: (var(--black));
+
+    header {
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+
+        .hemburger {
+            display: none;
+            width: 40px;
+            height: 20px;
+            margin-left: 5px;
+            transition: 1s ease-in-out;
+
+            div {
+                display: none;
+                margin-top: 4px;
+                padding: 3px;
+                width: 40px;
+                background-color: white;
+
+            }
+        }
+
+        .hemburgerclose {
+            display: block;
+            width: 40px;
+            height: 20px;
+            margin-left: 5px;
+            transition: 1s ease;
+
+            div {
+                display: block;
+                margin-top: 4px;
+                padding: 3px;
+                width: 40px;
+                background-color: white;
+                border-radius: 5px;
+
+            }
+
+            #topl {
+                width: 25px;
+                margin-left: 20px;
+                transform: rotate(40deg);
+            }
+
+            #middlel {
+                display: block;
+                width: 42px;
+            }
+
+            #bottoml {
+                width: 25px;
+                transform: rotate(-40deg);
+                margin-left: 20px;
+            }
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            border: 2px white;
+            align-items: center;
+            background: rgb(16, 14, 14);
+            padding: 6px;
+            font-size: 1.5em;
+            margin-bottom: 4px;
+            box-shadow: 0 0 60px white inset;
+            border-radius: 10px;
+
+            a {
+                color: aliceblue;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            max-width: fit-content;
+            box-shadow: 0 0 15px white inset;
+            border-radius: 10px;
+
+            ul {
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    list-style: none;
+                    margin-left: 4px;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        margin-left: 0.5em;
+                    }
+                }
+
+                li:hover {
+                    box-shadow: 0 0 40px white inset;
+                    border-radius: 10px;
+                    border: 2px white;
+                }
+            }
+        }
+    }
+}
