@@ -100,9 +100,8 @@ body header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 100%;
   border: 2px white;
   -webkit-box-align: center;
@@ -167,5 +166,99 @@ body header .navbar ul li:hover {
           box-shadow: 0 0 40px white inset;
   border-radius: 10px;
   border: 2px white;
+}
+
+body .darkmode {
+  display: block;
+  width: 60px;
+  margin-top: 5%;
+  margin-left: 95%;
+  padding: 20px 8px 20px 08px;
+  font-weight: bold;
+  border-radius: 30px;
+  color: var(--white);
+  background: var(--black);
+  -webkit-box-shadow: 0 0 10px white inset;
+          box-shadow: 0 0 10px white inset;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+body .lightmode {
+  display: block;
+  width: 60px;
+  margin-top: 5%;
+  margin-left: 95%;
+  padding: 20px 8px 20px 8px;
+  font-weight: bold;
+  border-radius: 30px;
+  color: var(--blue);
+  background: var(--whitet);
+  -webkit-box-shadow: 0 0 10px #0f0e0e inset;
+          box-shadow: 0 0 10px #0f0e0e inset;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  max-width: 100%;
+  border: 2px white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #100e0e;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+}
+
+@media (max-width: 1000px) {
+  body header .hemburger {
+    display: block;
+  }
+  body header .hemburger div {
+    display: block;
+  }
+  body header .nav {
+    max-width: 100%;
+  }
+  body header .navbar {
+    display: none;
+    margin-top: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main {
+    max-width: 90%;
+  }
+  body main .rightarea {
+    display: none;
+  }
+  body .darkmode {
+    margin-left: 5%;
+    margin-top: 6%;
+  }
+  body .lightmode {
+    margin-left: 85%;
+    margin-top: 6%;
+  }
 }
 /*# sourceMappingURL=login.css.map */

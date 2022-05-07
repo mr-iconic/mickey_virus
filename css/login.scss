@@ -80,7 +80,7 @@ body {
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             max-width: 100%;
             border: 2px white;
             align-items: center;
@@ -130,5 +130,87 @@ body {
                 }
             }
         }
+    }
+    .darkmode {
+        display: block;
+        width: 60px;
+        margin-top: 5%;
+        margin-left: 95%;
+        padding: 20px 8px 20px 08px;
+        font-weight: bold;
+        border-radius: 30px;
+        color: (var(--white));
+        background: (var(--black));
+        box-shadow: 0 0 10px white inset;
+        transform: rotate(360deg);
+        transition: 1s ease;
+    }
+
+    .lightmode {
+        display: block;
+        width: 60px;
+        margin-top: 5%;
+        margin-left: 95%;
+        padding: 20px 8px 20px 8px;
+        font-weight: bold;
+        border-radius: 30px;
+        color: (var(--blue));
+        background: (var(--whitet));
+        box-shadow: 0 0 10px rgb(15, 14, 14) inset;
+        transform: rotate(360deg);
+        transition: 1s ease;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        max-width: 100%;
+        border: 2px white;
+        align-items: center;
+        background: rgb(16, 14, 14);
+        box-shadow: 0 0 60px white inset;
+    }
+}
+
+@media(max-width:1000px) {
+    body {
+        header {
+            .hemburger {
+                display: block;
+
+                div {
+                    display: block;
+                }
+            }
+            .nav{
+                max-width: 100%;
+            }
+            .navbar {
+                display: none;
+                margin-top: 14px;
+                flex-direction: column;
+
+                ul {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        main {
+            max-width: 90%;
+
+            .rightarea {
+                display: none;
+            }
+        }
+
+    .darkmode{
+        margin-left: 5%;
+        margin-top: 6%;
+    }
+    .lightmode{
+        margin-left: 85%;
+        margin-top: 6%;
+    }
     }
 }

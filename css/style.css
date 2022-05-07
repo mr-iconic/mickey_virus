@@ -510,7 +510,7 @@ body footer {
             flex-direction: column;
   }
   body main {
-    max-width: 90%;
+    max-width: 100%;
   }
   body main .rightarea {
     display: none;
