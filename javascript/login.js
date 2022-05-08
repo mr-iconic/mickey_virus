@@ -49,7 +49,7 @@ y.addEventListener('click' , (e)=>{
         
         signOut(auth).then(() => {
             // Sign-out successful.
-            console.log("signout");
+            console.log("you are signout ");
           }).catch((error) => {
             // An error happened.
           });
