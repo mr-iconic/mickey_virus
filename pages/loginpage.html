@@ -24,7 +24,7 @@
             <li><a href="#">Top Free Resource</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Contact us</a></li>
-            <li><a href="#" id="signout"> signOut</a></li>
+            <li><a href="#" id="signout" > signOut</a></li>
         </ul>
     </nav>
     
@@ -34,7 +34,12 @@
         this site is created by abhishek tiwari
     </footer>
     <script src="../javascript/main.js"></script>
-   <script src="../javascript/login.js"></script>
+   <script type="module" src="../javascript/login.js"></script>
+<script>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
+import { getAuth , GoogleAuthProvider ,signInWithRedirect , getRedirectResult,signOut} from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
+</script>
+   
    
 </body>
 </html>
