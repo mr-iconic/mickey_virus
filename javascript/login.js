@@ -1,7 +1,7 @@
 
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
-    import { getAuth , GoogleAuthProvider , signInWithPopup ,signOut} from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
+    import { getAuth , GoogleAuthProvider , signInWithRedirect,signOut} from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
   
@@ -22,7 +22,7 @@
         var x=document.getElementById("gsignin");
         x.addEventListener('click',(e)=>{
 
-            signInWithPopup(auth, provider)
+          signInWithRedirect(auth, provider)
             .then((result) => {
               // This gives you a Google Access Token. You can use it to access the Google API.
               const credential = GoogleAuthProvider.credentialFromResult(result);
