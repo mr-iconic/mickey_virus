@@ -11,7 +11,11 @@
     <header>
     <nav>
         <a href="#">MICKEY VIRUS</a>
-        <button class="google" id="gsignin"> Google </button>
+        <div id="userdetail">
+            <img src="#" id="photo">
+            <p></p>
+        </div>
+        <button  class="google" id="gsignin"> Google </button>
     </nav>
     <div class="hemburger" id="hemb">
         <div class="hem_line" id="topl"></div>
@@ -37,7 +41,7 @@
    <script type="module" src="../javascript/login.js"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
-import { getAuth , GoogleAuthProvider ,signInWithRedirect , getRedirectResult,signOut} from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
+import { getAuth , GoogleAuthProvider ,signInWithPopup , getRedirectResult,signOut} from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
 </script>
    
    

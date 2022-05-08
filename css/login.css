@@ -130,6 +130,24 @@ body header nav .google {
   color: blue;
 }
 
+body header nav #userdetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav #userdetail img {
+  border-radius: 50px;
+  width: 12%;
+  height: 12%;
+}
+
+body header nav #userdetail p {
+  font-weight: bold;
+  color: #f9f9f9;
+  padding-top: 1.5%;
+}
+
 body header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +257,25 @@ body footer {
   }
   body header .nav {
     max-width: 100%;
+  }
+  body header .nav #userdetail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header .nav #userdetail img {
+    border-radius: 50px;
+    width: 12%;
+    height: 12%;
+  }
+  body header .nav #userdetail p {
+    font-weight: bold;
+    color: #f9f9f9;
+    padding-top: 1.5%;
+    font-size: 1em;
   }
   body header .navbar {
     display: none;

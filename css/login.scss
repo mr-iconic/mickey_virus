@@ -103,6 +103,20 @@ body {
               font-weight: bold;
               color: blue;
           }
+          #userdetail{
+           display: flex;
+           img{
+               border-radius: 50px;
+               width: 12%;
+               height: 12%;
+           }
+           p{
+               font-weight: bold;
+               color: #f9f9f9;
+               padding-top: 1.5%;
+
+           }
+          }
         }
 
         .navbar {
@@ -190,6 +204,22 @@ body {
             }
             .nav{
                 max-width: 100%;
+                #userdetail{
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        border-radius: 50px;
+                        width: 12%;
+                        height: 12%;
+                    }
+                    p{
+                        font-weight: bold;
+                        color: #f9f9f9;
+                        padding-top: 1.5%;
+                        font-size: 1em;
+         
+                    }
+                   }
             }
             .navbar {
                 display: none;
