@@ -122,6 +122,14 @@ body header nav a {
   font-weight: bold;
 }
 
+body header nav .google {
+  background: #e37272;
+  border-radius: 5px;
+  padding: 3px;
+  font-weight: bold;
+  color: blue;
+}
+
 body header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;

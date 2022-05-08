@@ -29,6 +29,7 @@
               const token = credential.accessToken;
               // The signed-in user info.
               const user = result.user;
+              x.style.display="none";
               // ...
             }).catch((error) => {
               // Handle Errors here.
@@ -40,7 +41,10 @@
               const credential = GoogleAuthProvider.credentialFromError(error);
               // ...
             });
+           
 })
+
+
 
 
 var y=document.getElementById("signout");
@@ -49,6 +53,7 @@ y.addEventListener('click' , (e)=>{
         
         signOut(auth).then(() => {
             // Sign-out successful.
+            x.style.display="block";
             console.log("you are signout ");
           }).catch((error) => {
             // An error happened.
