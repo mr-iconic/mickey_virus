@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,83 @@
     <title>mickey_virus</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
+
 <body id="switchlight">
     <header>
-    <nav>
-        <a href="#">MICKEY VIRUS</a>
-        <div id="userdetail">
-            <img src="#" id="photo">
-            <p></p>
+        <nav>
+            <a href="#">MICKEY VIRUS</a>
+            <div id="userdetail">
+                <img src="#" id="photo">
+                <p></p>
+            </div>
+            <button class="google" id="gsignin"> Google </button>
+        </nav>
+        <div class="hemburger" id="hemb">
+            <div class="hem_line" id="topl"></div>
+            <div class="hem_line" id="middlel"></div>
+            <div class="hem_line" id="bottoml"></div>
         </div>
-        <button  class="google" id="gsignin"> Google </button>
-    </nav>
-    <div class="hemburger" id="hemb">
-        <div class="hem_line" id="topl"></div>
-        <div class="hem_line" id="middlel"></div>
-        <div class="hem_line" id="bottoml"></div>
-    </div>
-    <nav class="navbar" id="nav_bar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Top Free Resource</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#" id="signout" > signOut</a></li>
-        </ul>
-    </nav>
-    
-</header>
-<input class="lightmode" id="theme" type="button" value="light">
+        <nav class="navbar" id="nav_bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Top Free Resource</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#" id="signout"> signOut</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="filtersearched">
+            <div class="filter">
+                <div>
+                    <h2>Get Filter searched</h2>
+                </div>
+                <div class="fakehemburger" id="fite">
+                    <div class="hem_line" id="topl"></div>
+                    <div class="hem_line" id="middlel"></div>
+                    <div class="hem_line" id="bottoml"></div>
+                </div>
+            </div>
+            <div class="text">
+                <p>Sign In or Register to save your preferences and record your progress.</p>
+            </div>
+        </section>
+        <section class="beginerinfo">
+            <h1>Beginner Friendly Resources</h1>
+            <hr>
+            <p class="info">
+                Everything come at some cost. Resources shared here are completely Free Of Cost in terms of money,
+                instead they come at cost of the most valuable thing you have. It cost Time, and Energy.
+            </p>
+            <p class="info">
+                All it requires to take the course is Interest, at beginning, and courage to keep going and finding
+                solutions to the obstacles faced, all on your own.
+            </p>
+            <p class="info" id="bold">
+                Don't get lost in vast amount of resources available. Just start from the first available.
+            </p>
+        </section>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pNl-u0A92K4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+    <input class="lightmode" id="theme" type="button" value="light">
     <footer>
         this site is created by abhishek tiwari
     </footer>
     <script src="../javascript/main.js"></script>
-   <script type="module" src="../javascript/login.js"></script>
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
-import { getAuth , GoogleAuthProvider ,signInWithPopup , getRedirectResult,signOut} from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
-</script>
-   
-   
+    <script type="module" src="../javascript/login.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, signInWithPopup, getRedirectResult, signOut } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
+    </script>
+
+
 </body>
+
 </html>

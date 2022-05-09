@@ -229,6 +229,103 @@ body .lightmode {
   transition: 1s ease;
 }
 
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body main section {
+  -webkit-box-shadow: 0 0 15px white;
+          box-shadow: 0 0 15px white;
+  margin: 2% 5% 2% 5%;
+  border-radius: 5px;
+}
+
+body main .filtersearched {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+}
+
+body main .filtersearched .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+body main .filtersearched .filter .fakehemburger {
+  height: 28px;
+  width: 30px;
+}
+
+body main .filtersearched .filter .fakehemburger div {
+  display: block;
+  padding: 2px;
+  margin: 4px;
+  width: 25px;
+  border-radius: 2px;
+  background: white;
+}
+
+body main .filtersearched .filter .fakehemburger:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px white;
+          box-shadow: 0 0 15px white;
+}
+
+body main .filtersearched .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  font-weight: bold;
+}
+
+body main .beginerinfo {
+  -webkit-box-shadow: 0 0 15px white inset;
+          box-shadow: 0 0 15px white inset;
+  padding: 1em;
+}
+
+body main .beginerinfo h1 {
+  font-weight: bold;
+}
+
+body main .beginerinfo .info {
+  color: #7c7c80;
+  font-weight: bold;
+  margin: 1em 0 1em 0;
+  font-size: 1em;
+}
+
+body main .beginerinfo #bold {
+  font-weight: bolder;
+  color: white;
+}
+
 body footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,12 +393,6 @@ body footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  body main {
-    max-width: 90%;
-  }
-  body main .rightarea {
-    display: none;
   }
   body .darkmode {
     margin-left: 5%;
