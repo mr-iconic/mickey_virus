@@ -19,35 +19,18 @@
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider(app); 
     document.getElementById("photo").style.display="none";
+    document.getElementById("signout").style.display="none";
         var x=document.getElementById("gsignin");
-        // x.addEventListener('click', (e)=>{
-
-        //    signInWithRedirect(auth, provider)
-        //   .then((result) => {
-        //       // This gives you a Google Access Token. You can use it to access the Google API.
-        //       const credential = GoogleAuthProvider.credentialFromResult(result);
-        //       const token = credential.accessToken;
-        //       // The signed-in user info.
-        //       const user = result.user;
-        //       var name= user.email;
-        //       // ...
-             
-        //     }).catch((error) => {
-        //       // Handle Errors here.
-        //       const errorCode = error.code;
-        //       const errorMessage = error.message;
-        //       // The email of the user's account used.
-        //       const email = error.email;
-        //       // The AuthCredential type that was used.
-        //       const credential = GoogleAuthProvider.credentialFromError(error);
-        //       // ...
-        //     });
-        //   })
-
+       
        x.addEventListener('click' , login)
        function login(){
          signInWithPopup(auth ,provider).then(res =>{
        showuser(res.user)
+       document.getElementById("gsignin").style.display="none";
+       document.getElementById("signout").style.display="block";
+      
+
+
          }).catch(e=>{
            console.log("error")
          })
@@ -59,23 +42,24 @@
            <img src="${user.photoURL}" >
            <p>${user.displayName}</p>
            `
-           document.getElementById("gsignin").style.display="none";
          }
 
 var y=document.getElementById("signout");
-y.addEventListener('click' , (e)=>{
+y.addEventListener('click' , signout)
+function signout(){
 
-        
         signOut(auth).then(() => {
             // Sign-out successful.
-            x.style.display="block";
+            document.getElementById("gsignin").style.display="block";
+            document.getElementById("signout").style.display="none";
+            document.getElementById("userdetail").style.display="none"
             console.log("you are signout ");
-          }).catch((error) => {
+          }).catch(e => {
             // An error happened.
-          });
+          })
     }
       
-)
+
 
 
    
