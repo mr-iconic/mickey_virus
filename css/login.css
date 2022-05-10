@@ -316,7 +316,7 @@ body main .beginerinfo h1 {
 }
 
 body main .beginerinfo .info {
-  color: #7c7c80;
+  color: #683d2b;
   font-weight: bold;
   margin: 1em 0 1em 0;
   font-size: 1em;
@@ -327,25 +327,48 @@ body main .beginerinfo #bold {
   color: white;
 }
 
-body main iframe {
-  width: 40%;
-  height: 200px;
+body main .htmlhead {
+  margin-bottom: -2%;
 }
 
-body main .htmltutorials h1 {
+body main .htmlhead h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-weight: bold;
 }
 
-body main .htmltutorials .htmls {
+body main iframe {
+  width: 40%;
+  height: 200px;
+  margin: 3px;
+  -webkit-box-shadow: 0 0 15px white;
+          box-shadow: 0 0 15px white;
+}
+
+body .htmltutorials {
+  margin-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+}
+
+body .htmltutorials .htmls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -357,23 +380,38 @@ body main .htmltutorials .htmls {
           box-shadow: 0 0 15px white inset;
 }
 
-body main .htmltutorials .htmls div {
+body .htmltutorials .htmls div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-body main .htmltutorials .htmls div .description {
+body .htmltutorials .htmls div div p {
+  text-align: center;
+  padding: 3px;
+}
+
+body .htmltutorials .htmls div .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .htmltutorials .htmls div .description div img {
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 15px white;
+          box-shadow: 0 0 15px white;
 }
 
 body footer {
@@ -452,10 +490,11 @@ body footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 2%;
   }
   body main .htmltutorials .htmls {
     -webkit-box-orient: vertical;
