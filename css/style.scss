@@ -262,6 +262,7 @@ body {
                 justify-content: center;
                 flex-flow: column nowrap;
                 margin: auto;
+                margin-right: 1.4rem;
                 max-width: 100%;
                 border-radius: 10px;
                 border: 1px solid rgb(45, 55, 247);
@@ -270,7 +271,7 @@ body {
 
                 .head {
                     text-align: center;
-                    margin: 2em auto;
+                    margin: 1rem auto;
 
                     p {
                         font-size: 1.2em;
@@ -278,20 +279,21 @@ body {
                     }
 
                     h1 {
-                        font-size: 1em;
+                        font-size: 1.4rem;
+                        font-weight: bold;
                     }
 
                 }
 
                 label {
-                    font-size: 1em;
+                    font-size: 1.2em;
                     font-weight: bold;
                 }
 
                 .center_form {
                     display: flex;
                     flex-direction: column;
-                    margin: 1em 2rem;
+                    margin: 1em 1.2rem;
                     max-width: 90%;
 
                     .goal {
@@ -321,6 +323,7 @@ body {
                        
                       p{
                           display: inline;
+                          font-size: 1.1rem;
                           font-weight: bold;
                       }
 
@@ -334,6 +337,7 @@ body {
                         justify-content: space-between;
                         align-items: center;
                         max-width: 90%;
+                        margin: 1em 0;
 
                         input,
                         select {
@@ -361,7 +365,7 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin: 2rem auto;
+                    margin: 1.2rem auto;
 
                     a {
                         background: rgb(61, 58, 58);
@@ -382,8 +386,8 @@ body {
     .darkmode {
                 display: block;
                 width: 60px;
-                margin-top: 5%;
-                margin-left: 85%;
+                margin-top: 3%;
+                margin-left: 90%;
                 padding: 20px 8px 20px 08px;
                 font-weight: bold;
                 border-radius: 30px;
@@ -397,8 +401,8 @@ body {
             .lightmode {
                 display: block;
                 width: 60px;
-                margin-top: 5%;
-                margin-left: 15%;
+                margin-top: 3%;
+                margin-left: 5%;
                 padding: 20px 8px 20px 8px;
                 font-weight: bold;
                 border-radius: 30px;
@@ -469,11 +473,11 @@ body {
         }
 
         .darkmode {
-            margin-left: 85%;
+            margin-right: 90%;
         }
         
         .lightmode {
-            margin-left: 15%;
+            margin-left: 5%;
         }
     }
 }

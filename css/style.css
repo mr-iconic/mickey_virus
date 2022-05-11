@@ -346,6 +346,7 @@ body main .form_box .leftarea {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   margin: auto;
+  margin-right: 1.4rem;
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid #2d37f7;
@@ -356,7 +357,7 @@ body main .form_box .leftarea {
 
 body main .form_box .leftarea .head {
   text-align: center;
-  margin: 2em auto;
+  margin: 1rem auto;
 }
 
 body main .form_box .leftarea .head p {
@@ -365,11 +366,12 @@ body main .form_box .leftarea .head p {
 }
 
 body main .form_box .leftarea .head h1 {
-  font-size: 1em;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 body main .form_box .leftarea label {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -381,7 +383,7 @@ body main .form_box .leftarea .center_form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1em 2rem;
+  margin: 1em 1.2rem;
   max-width: 90%;
 }
 
@@ -418,6 +420,7 @@ body main .form_box .leftarea .center_form .goal select option {
 
 body main .form_box .leftarea .center_form .pc_confirmation p {
   display: inline;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -436,6 +439,7 @@ body main .form_box .leftarea .center_form .expected_time {
       -ms-flex-align: center;
           align-items: center;
   max-width: 90%;
+  margin: 1em 0;
 }
 
 body main .form_box .leftarea .center_form .expected_time input,
@@ -469,7 +473,7 @@ body main .form_box .leftarea .getpoint {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2rem auto;
+  margin: 1.2rem auto;
 }
 
 body main .form_box .leftarea .getpoint a {
@@ -486,8 +490,8 @@ body main .form_box .leftarea .getpoint a {
 body .darkmode {
   display: block;
   width: 60px;
-  margin-top: 5%;
-  margin-left: 85%;
+  margin-top: 3%;
+  margin-left: 90%;
   padding: 20px 8px 20px 08px;
   font-weight: bold;
   border-radius: 30px;
@@ -504,8 +508,8 @@ body .darkmode {
 body .lightmode {
   display: block;
   width: 60px;
-  margin-top: 5%;
-  margin-left: 15%;
+  margin-top: 3%;
+  margin-left: 5%;
   padding: 20px 8px 20px 8px;
   font-weight: bold;
   border-radius: 30px;
@@ -581,10 +585,10 @@ body footer p {
     max-width: 75%;
   }
   body .darkmode {
-    margin-left: 85%;
+    margin-right: 90%;
   }
   body .lightmode {
-    margin-left: 15%;
+    margin-left: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
