@@ -23,8 +23,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
   width: 100%;
+  height: 100vh;
   color: var(--white);
   background: var(--black);
 }
@@ -40,10 +40,11 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100%;
 }
 
 body header .hemburger {
-  display: none;
+  display: block;
   width: 40px;
   height: 20px;
   margin-left: 5px;
@@ -52,7 +53,7 @@ body header .hemburger {
 }
 
 body header .hemburger div {
-  display: none;
+  display: block;
   margin-top: 4px;
   padding: 3px;
   width: 40px;
@@ -109,9 +110,10 @@ body header nav {
       -ms-flex-align: center;
           align-items: center;
   background: #100e0e;
-  padding: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 1.5em;
-  margin-bottom: 4px;
+  margin-bottom: 1%;
   -webkit-box-shadow: 0 0 60px white inset;
           box-shadow: 0 0 60px white inset;
   border-radius: 10px;
@@ -124,9 +126,7 @@ body header nav a {
 }
 
 body header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -136,6 +136,7 @@ body header .navbar {
   -webkit-box-shadow: 0 0 15px white inset;
           box-shadow: 0 0 15px white inset;
   border-radius: 10px;
+  margin-top: 2%;
 }
 
 body header .navbar ul {
@@ -143,6 +144,10 @@ body header .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -173,91 +178,118 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 70%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+body main .form_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  margin-top: 19vh;
+  max-width: 80%;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 15px white inset;
-          box-shadow: 0 0 15px white inset;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body main .rightarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body main .form_box .rightarea {
+  display: none;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 4%;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 0 auto;
+  margin-right: 0;
+  max-width: 60%;
 }
 
-body main .rightarea .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+body main .form_box .rightarea h3 {
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 1.1rem;
 }
 
-body main .rightarea .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+body main .form_box .rightarea p {
+  font-style: 1rem;
   font-weight: bold;
-  margin-top: 5%;
 }
 
-body main .rightarea .line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body main .rightarea .line #right {
-  display: block;
-  margin-top: 5%;
-  padding-bottom: 1%;
-  padding-right: 35%;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 2px 2px white inset;
-          box-shadow: 1px 2px 2px white inset;
-}
-
-body main .rightarea .downarea {
+body main .form_box .rightarea .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 100%;
+  height: 2em;
+  margin: 0.7rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-body main .rightarea .downarea .rightside,
-body main .rightarea .downarea .leftside {
-  margin-top: 5%;
+body main .form_box .rightarea .line #right {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border-top-left-radius: 10px;
+  border-top: 1px solid #f9f9f9;
+}
+
+body main .form_box .rightarea .line #left {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border-top-right-radius: 10px;
+  border-top: 1px solid #f9f9f9;
+}
+
+body main .form_box .rightarea .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  max-width: 80%;
+  margin: auto;
+}
+
+body main .form_box .rightarea .middle .downarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .form_box .rightarea .middle .downarea .rightside,
+body main .form_box .rightarea .middle .downarea .leftside {
   text-align: center;
+  font-size: 0.8rem;
+  margin: auto;
 }
 
-body main .rightarea .downarea .bottommiddle {
+body main .form_box .rightarea .middle .downarea .bottommiddle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,21 +305,22 @@ body main .rightarea .downarea .bottommiddle {
           flex-direction: column;
 }
 
-body main .rightarea .downarea .bottommiddle .top,
-body main .rightarea .downarea .bottommiddle .bottom {
+body main .form_box .rightarea .middle .downarea .bottommiddle .top,
+body main .form_box .rightarea .middle .downarea .bottommiddle .bottom {
   display: block;
-  height: 4vh;
+  height: 40%;
   width: 0;
+  margin: auto;
   border: 1.2px solid white;
   -webkit-box-shadow: 1px 2px 1px white inset;
           box-shadow: 1px 2px 1px white inset;
 }
 
-body main .rightarea .downarea .bottommiddle .center {
-  margin: 10px 0 10px 0;
+body main .form_box .rightarea .middle .downarea .bottommiddle .center {
+  margin: 0.5rem;
 }
 
-body main .rightarea .downarea .bottommiddle .center a {
+body main .form_box .rightarea .middle .downarea .bottommiddle .center a {
   background: black;
   -webkit-box-shadow: 0 0 50px white inset;
           box-shadow: 0 0 50px white inset;
@@ -295,11 +328,13 @@ body main .rightarea .downarea .bottommiddle .center a {
   font-weight: bold;
   border-radius: 8px;
   color: #121111;
-  padding: 3px 10px 3px 10px;
+  padding: 0.3rem;
 }
 
-body main .leftarea {
-  display: block;
+body main .form_box .leftarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -308,10 +343,9 @@ body main .leftarea {
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 2.5%;
-  padding: 4% 1% 4% 1%;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: auto;
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid #2d37f7;
@@ -320,16 +354,38 @@ body main .leftarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body main .leftarea .head {
+body main .form_box .leftarea .head {
   text-align: center;
-  margin: 5%;
+  margin: 2em auto;
 }
 
-body main .leftarea .form label {
+body main .form_box .leftarea .head p {
+  font-size: 1.2em;
   font-weight: bold;
 }
 
-body main .leftarea .form .goal {
+body main .form_box .leftarea .head h1 {
+  font-size: 1em;
+}
+
+body main .form_box .leftarea label {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body main .form_box .leftarea .center_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em 2rem;
+  max-width: 90%;
+}
+
+body main .form_box .leftarea .center_form .goal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,12 +396,13 @@ body main .leftarea .form .goal {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5%;
+  margin: 1em 0;
 }
 
-body main .leftarea .form .goal select {
+body main .form_box .leftarea .center_form .goal select {
   border-radius: 5px;
-  padding: 3px;
+  padding: 0.2rem;
+  font-size: 0.8rem;
   background: #847c7c;
   color: #0c0c0c;
   -webkit-box-shadow: 0 0 15px white inset;
@@ -353,26 +410,22 @@ body main .leftarea .form .goal select {
   font-weight: bold;
 }
 
-body main .leftarea .form .goal select option {
+body main .form_box .leftarea .center_form .goal select option {
   background: #847c7c;
   color: black;
   font-weight: bold;
 }
 
-body main .leftarea .form .pc_confirmation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px;
-  margin-bottom: 5%;
-  margin-top: 5%;
+body main .form_box .leftarea .center_form .pc_confirmation p {
+  display: inline;
+  font-weight: bold;
 }
 
-body main .leftarea .form .pc_confirmation #pc_c {
+body main .form_box .leftarea .center_form .pc_confirmation #pc_c {
   margin-top: 2px;
 }
 
-body main .leftarea .form .expected_time {
+body main .form_box .leftarea .center_form .expected_time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,15 +435,14 @@ body main .leftarea .form .expected_time {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
-  margin-right: 5%;
+  max-width: 90%;
 }
 
-body main .leftarea .form .expected_time input,
-body main .leftarea .form .expected_time select {
+body main .form_box .leftarea .center_form .expected_time input,
+body main .form_box .leftarea .center_form .expected_time select {
   border-radius: 5px;
   max-width: 25%;
-  padding: 3px;
+  padding: 0.2rem;
   background: #847c7c;
   color: black;
   -webkit-box-shadow: 0 0 15px white inset;
@@ -398,8 +450,8 @@ body main .leftarea .form .expected_time select {
   font-weight: bold;
 }
 
-body main .leftarea .form .expected_time input option,
-body main .leftarea .form .expected_time select option {
+body main .form_box .leftarea .center_form .expected_time input option,
+body main .form_box .leftarea .center_form .expected_time select option {
   background: #847c7c;
   color: black;
   font-weight: bold;
@@ -407,7 +459,7 @@ body main .leftarea .form .expected_time select option {
           box-shadow: 0 0 60px white inset;
 }
 
-body main .leftarea .getpoint {
+body main .form_box .leftarea .getpoint {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,14 +469,14 @@ body main .leftarea .getpoint {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10%;
+  margin: 2rem auto;
 }
 
-body main .leftarea .getpoint a {
+body main .form_box .leftarea .getpoint a {
   background: #3d3a3a;
   color: #f7f3f3;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.5rem;
   font-weight: bold;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 60px white inset;
@@ -435,7 +487,7 @@ body .darkmode {
   display: block;
   width: 60px;
   margin-top: 5%;
-  margin-left: 95%;
+  margin-left: 85%;
   padding: 20px 8px 20px 08px;
   font-weight: bold;
   border-radius: 30px;
@@ -453,7 +505,7 @@ body .lightmode {
   display: block;
   width: 60px;
   margin-top: 5%;
-  margin-left: 95%;
+  margin-left: 15%;
   padding: 20px 8px 20px 8px;
   font-weight: bold;
   border-radius: 30px;
@@ -468,60 +520,71 @@ body .lightmode {
 }
 
 body footer {
+  border: 2px white;
+  background: #100e0e;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+  max-width: 100%;
+  margin-top: 2%;
+}
+
+body footer p {
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5px;
-  max-width: 100%;
-  border: 2px white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #100e0e;
-  -webkit-box-shadow: 0 0 60px white inset;
-          box-shadow: 0 0 60px white inset;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 950px) {
   body header .hemburger {
-    display: block;
+    display: none;
   }
   body header .hemburger div {
-    display: block;
+    display: none;
   }
   body header .nav {
     max-width: 100%;
+    margin-bottom: 2%;
   }
   body header .navbar {
-    display: none;
-    margin-top: 14px;
-    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 0;
   }
   body header .navbar ul {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body main {
     max-width: 100%;
   }
-  body main .rightarea {
-    display: none;
+  body main .form_box {
+    -webkit-box-shadow: 0 0 15px white inset;
+            box-shadow: 0 0 15px white inset;
+  }
+  body main .form_box .rightarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .form_box .leftarea {
+    max-width: 75%;
   }
   body .darkmode {
-    margin-left: 5%;
-    margin-top: 6%;
+    margin-left: 85%;
   }
   body .lightmode {
-    margin-left: 85%;
-    margin-top: 6%;
+    margin-left: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
