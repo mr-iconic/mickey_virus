@@ -210,8 +210,8 @@ body .darkmode {
           box-shadow: 0 0 10px white inset;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
 }
 
 body .lightmode {
@@ -228,8 +228,9 @@ body .lightmode {
           box-shadow: 0 0 10px #0f0e0e inset;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  rotate: 360deg;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
 }
 
 body main {

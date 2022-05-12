@@ -171,9 +171,11 @@ body {
         background: (var(--black));
         box-shadow: 0 0 10px white inset;
         transform: rotate(360deg);
-        transition: 1s ease;
+        transition: 3s ease;
+        
+       
     }
-
+   
     .lightmode {
         display: block;
         width: 60px;
@@ -186,9 +188,11 @@ body {
         background: (var(--whitet));
         box-shadow: 0 0 10px rgb(15, 14, 14) inset;
         transform: rotate(360deg);
-        transition: 1s ease;
-    }
-
+        rotate: (360deg);
+        transition: 3s ease;
+       
+   
+      }
     main {
         display: flex;
         justify-content: space-between;
