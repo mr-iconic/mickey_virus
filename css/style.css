@@ -503,22 +503,6 @@ body .darkmode {
           transform: rotate(360deg);
   -webkit-transition: 3s ease;
   transition: 3s ease;
-  -webkit-animation: mymove 2s step-start;
-          animation: mymove 2s step-start;
-}
-
-@-webkit-keyframes mymove {
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes mymove {
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 body .lightmode {
@@ -538,15 +522,6 @@ body .lightmode {
   rotate: 360deg;
   -webkit-transition: 3s ease;
   transition: 3s ease;
-  -webkit-animation: mymove 2s step-start;
-          animation: mymove 2s step-start;
-}
-
-@keyframes mymove {
-  50% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
 }
 
 body footer {

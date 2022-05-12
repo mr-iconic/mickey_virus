@@ -396,12 +396,10 @@ body {
                 box-shadow: 0 0 10px white inset;
                 transform: rotate(360deg);
                 transition: 3s ease;
-                animation: mymove 2s step-start;
+                
                
             }
-            @keyframes mymove {
-                50% {transform: rotate(360deg);}
-              }
+           
             .lightmode {
                 display: block;
                 width: 60px;
@@ -416,10 +414,8 @@ body {
                 transform: rotate(360deg);
                 rotate: (360deg);
                 transition: 3s ease;
-                animation: mymove 2s step-start;
-            }
-            @keyframes mymove {
-                50% {transform: rotate(-360deg);}
+               
+           
               }
         footer {
             
