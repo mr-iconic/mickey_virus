@@ -509,15 +509,15 @@ body .darkmode {
 
 @-webkit-keyframes mymove {
   50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
 @keyframes mymove {
   50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
