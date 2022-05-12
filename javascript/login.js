@@ -1,7 +1,7 @@
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut ,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -45,28 +45,28 @@ function showuser(user) {
   document.getElementById("userdetail").style.display = "flex";
 }
 
-auth.onAuthStateChanged((user)=>{
+auth.onAuthStateChanged((user) => {
   showuser(user);
   document.getElementById("gsignin").style.display = "none";
   document.getElementById("signout").style.display = "block";
 })
 
 
-  var y = document.getElementById("signout");
-  y.addEventListener('click', signout)
-  function signout() {
+var y = document.getElementById("signout");
+y.addEventListener('click', signout)
+function signout() {
 
-    signOut(auth).then(() => {
-      // Sign-out successful.
-      document.getElementById("gsignin").style.display = "block";
-      document.getElementById("signout").style.display = "none";
-      document.getElementById("userdetail").style.display = "none"
-      console.log("you are signout ");
-     
-    }).catch(e => {
-      // An error happened.
-    })
-  }
+  signOut(auth).then(() => {
+    // Sign-out successful.
+    document.getElementById("gsignin").style.display = "block";
+    document.getElementById("signout").style.display = "none";
+    document.getElementById("userdetail").style.display = "none"
+    console.log("you are signout ");
+
+  }).catch(e => {
+    // An error happened.
+  })
+}
 
 
 
