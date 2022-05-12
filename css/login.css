@@ -501,6 +501,9 @@ body footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     margin-top: 14px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
