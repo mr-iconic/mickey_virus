@@ -38,18 +38,16 @@ function login() {
 
 }
 function showuser(user) {
-
-   document.querySelector("#userdetail").innerHTML = `
-           <img src="${user.photoURL}" >
-           <p>${user.displayName}</p>
-           `
+  document.querySelector("#userdetail").innerHTML = `
+  <img src="${user.photoURL}" >
+  <p>${user.displayName}</p>
+  `
 }
 
 auth.onAuthStateChanged((user)=>{
   showuser(user);
   document.getElementById("gsignin").style.display = "none";
   document.getElementById("signout").style.display = "block";
-
 })
 
 
@@ -63,7 +61,7 @@ auth.onAuthStateChanged((user)=>{
       document.getElementById("signout").style.display = "none";
       document.getElementById("userdetail").style.display = "none"
       console.log("you are signout ");
-      
+     
     }).catch(e => {
       // An error happened.
     })

@@ -24,7 +24,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   color: var(--white);
   background: var(--black);
 }
@@ -43,7 +43,7 @@ body header {
 }
 
 body header .hemburger {
-  display: none;
+  display: block;
   width: 40px;
   height: 20px;
   margin-left: 5px;
@@ -52,7 +52,7 @@ body header .hemburger {
 }
 
 body header .hemburger div {
-  display: none;
+  display: block;
   margin-top: 4px;
   padding: 3px;
   width: 40px;
@@ -108,7 +108,7 @@ body header nav {
       -ms-flex-align: center;
           align-items: center;
   background: #100e0e;
-  padding: 6px;
+  padding: 6px 0;
   font-size: 1.5em;
   margin-bottom: 4px;
   -webkit-box-shadow: 0 0 60px white inset;
@@ -148,12 +148,11 @@ body header nav #userdetail p {
 }
 
 body header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2%;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -167,6 +166,10 @@ body header .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -196,8 +199,8 @@ body header .navbar ul li:hover {
 body .darkmode {
   display: block;
   width: 60px;
-  margin-top: 5%;
-  margin-left: 95%;
+  margin-top: 3%;
+  margin-left: 90%;
   padding: 20px 8px 20px 08px;
   font-weight: bold;
   border-radius: 30px;
@@ -214,8 +217,8 @@ body .darkmode {
 body .lightmode {
   display: block;
   width: 60px;
-  margin-top: 5%;
-  margin-left: 95%;
+  margin-top: 3%;
+  margin-left: 5%;
   padding: 20px 8px 20px 8px;
   font-weight: bold;
   border-radius: 30px;
@@ -240,6 +243,7 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100%;
   margin-top: 5%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -346,8 +350,8 @@ body main .htmlhead h1 {
 }
 
 body main iframe {
-  width: 40%;
-  height: 200px;
+  width: 95%;
+  height: 250px;
   margin: 3px;
   -webkit-box-shadow: 0 0 15px white;
           box-shadow: 0 0 15px white;
@@ -358,6 +362,10 @@ body .htmltutorials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -368,6 +376,10 @@ body .htmltutorials .htmls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -432,19 +444,15 @@ body footer {
           box-shadow: 0 0 60px white inset;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 950px) {
   body header .hemburger {
-    display: block;
+    display: none;
   }
   body header .hemburger div {
-    display: block;
+    display: none;
   }
   body header .nav {
     max-width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -453,9 +461,9 @@ body footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body header .nav #userdetail img {
     border-radius: 50px;
@@ -469,22 +477,20 @@ body footer {
     font-size: 1em;
   }
   body header .navbar {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 14px;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body header .navbar ul {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body main iframe {
-    width: 100%;
-    height: 250px;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body main .htmltutorials {
     display: -webkit-box;
@@ -497,18 +503,21 @@ body footer {
     margin-top: 2%;
   }
   body main .htmltutorials .htmls {
-    -webkit-box-orient: vertical;
+    max-width: 100%;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main .htmltutorials .htmls iframe {
+    min-width: 40%;
+    height: 300px;
   }
   body .darkmode {
-    margin-left: 5%;
-    margin-top: 6%;
+    margin-left: 90%;
   }
   body .lightmode {
-    margin-left: 85%;
-    margin-top: 6%;
+    margin-left: 5%;
   }
 }
 /*# sourceMappingURL=login.css.map */
