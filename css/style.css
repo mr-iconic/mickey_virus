@@ -47,6 +47,7 @@ body header .hemburger {
   display: block;
   width: 40px;
   height: 20px;
+  margin-top: 1%;
   margin-left: 5px;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
@@ -64,6 +65,7 @@ body header .hemburgerclose {
   display: block;
   width: 40px;
   height: 20px;
+  margin-top: 1%;
   margin-left: 5px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
@@ -87,7 +89,7 @@ body header .hemburgerclose #topl {
 
 body header .hemburgerclose #middlel {
   display: block;
-  width: 45px;
+  width: 44px;
 }
 
 body header .hemburgerclose #bottoml {
