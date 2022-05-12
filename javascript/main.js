@@ -17,6 +17,7 @@ swt.addEventListener("click", function function2() {
       swt.value = "dark";
       swt.className = "darkmode"
       var right = document.getElementById("switchlight").style.backgroundColor = "#1d858b";
+      var right = document.getElementById("switchlight").style.transitionDelay = "2s";
       var right = document.getElementById("switchlight").style.color = "#6d1c06";
    } else {
       swt.className = "lightmode"
