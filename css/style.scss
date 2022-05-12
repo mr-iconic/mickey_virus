@@ -386,8 +386,8 @@ body {
     .darkmode {
                 display: block;
                 width: 60px;
-                // margin-top: 3%;
-                margin: 0 auto;
+                margin-top: 3%;
+                margin-left: 85%;
                 padding: 20px 8px 20px 08px;
                 font-weight: bold;
                 border-radius: 30px;
@@ -401,8 +401,8 @@ body {
             .lightmode {
                 display: block;
                 width: 60px;
-                // margin-top: 3%;
-                margin: 0 auto;
+                margin-top: 3%;
+                margin-left: 5%;
                 padding: 20px 8px 20px 8px;
                 font-weight: bold;
                 border-radius: 30px;
@@ -473,11 +473,11 @@ body {
         }
 
         .darkmode {
-            margin-left: auto;
+            margin-left: 85%;
         }
         
         .lightmode {
-            margin-left: auto;
+            margin-left: 5%;
         }
     }
 }
