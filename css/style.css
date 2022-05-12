@@ -538,8 +538,8 @@ body .lightmode {
   rotate: 360deg;
   -webkit-transition: 3s ease;
   transition: 3s ease;
-  -webkit-animation: mymove 2s;
-          animation: mymove 2s;
+  -webkit-animation: mymove 2s step-start;
+          animation: mymove 2s step-start;
 }
 
 @keyframes mymove {
