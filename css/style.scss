@@ -396,7 +396,7 @@ body {
                 box-shadow: 0 0 10px white inset;
                 transform: rotate(360deg);
                 transition: 3s ease;
-                animation: mymove 5s infinite;
+                animation: mymove 2s infinite;
                
             }
             @keyframes mymove {
@@ -416,8 +416,11 @@ body {
                 transform: rotate(360deg);
                 rotate: (360deg);
                 transition: 3s ease;
+                animation: mymove 2s infinite;
             }
-        
+            @keyframes mymove {
+                50% {transform: rotate(360deg);}
+              }
         footer {
             
             border: 2px white;
