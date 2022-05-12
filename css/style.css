@@ -503,8 +503,8 @@ body .darkmode {
           transform: rotate(360deg);
   -webkit-transition: 3s ease;
   transition: 3s ease;
-  -webkit-animation: mymove 2s ease;
-          animation: mymove 2s ease;
+  -webkit-animation: mymove 2s;
+          animation: mymove 2s;
 }
 
 @-webkit-keyframes mymove {
@@ -538,8 +538,8 @@ body .lightmode {
   rotate: 360deg;
   -webkit-transition: 3s ease;
   transition: 3s ease;
-  -webkit-animation: mymove 2s ease;
-          animation: mymove 2s ease;
+  -webkit-animation: mymove 2s;
+          animation: mymove 2s;
 }
 
 @keyframes mymove {
