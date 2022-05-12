@@ -397,11 +397,11 @@ body {
                 transform: rotate(360deg);
                 transition: 3s ease;
                 animation: mymove 5s ease;
-                @keyframes mymove {
-                    50% {transform: rotate(360deg);}
-                  }
+               
             }
-
+            @keyframes mymove {
+                50% {transform: rotate(360deg);}
+              }
             .lightmode {
                 display: block;
                 width: 60px;
