@@ -100,8 +100,9 @@ body header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   max-width: 100%;
   border: 2px white;
   -webkit-box-align: center;
@@ -130,21 +131,37 @@ body header nav .google {
   color: blue;
 }
 
-body header nav #userdetail {
+body header #userdetail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-height: 2.5rem;
+  max-width: 100%;
+  border: 2px white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #100e0e;
+  padding: 6px 0;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+  border-radius: 10px;
 }
 
-body header nav #userdetail img {
+body header #userdetail img {
   border-radius: 50px;
-  width: 12%;
-  height: 12%;
+  width: 2rem;
+  height: 2rem;
 }
 
-body header nav #userdetail p {
+body header #userdetail p {
   color: #f9f9f9;
-  padding-top: 1.5%;
+  margin: 0 1rem;
 }
 
 body header .navbar {
@@ -468,8 +485,8 @@ body footer {
   }
   body header .nav #userdetail img {
     border-radius: 50px;
-    width: 12%;
-    height: 12%;
+    width: 3rem;
+    height: 3rem;
   }
   body header .nav #userdetail p {
     font-weight: bold;

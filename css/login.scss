@@ -80,7 +80,7 @@ body {
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             max-width: 100%;
             border: 2px white;
             align-items: center;
@@ -107,20 +107,32 @@ body {
             }
             
 
-            #userdetail {
-                display: flex;
+            
+        }
+        #userdetail {
+            display: flex;
+            justify-content: end;
+            max-height: 2.5rem;
+            max-width: 100%;
+            border: 2px white;
+            align-items: center;
+            background: rgb(16, 14, 14);
+            padding: 6px 0;
+            font-size: 1.4rem;
+            margin-bottom: 4px;
+            box-shadow: 0 0 60px white inset;
+            border-radius: 10px;
 
-                img {
-                    border-radius: 50px;
-                    width: 12%;
-                    height: 12%;
-                }
+            img {
+                border-radius: 50px;
+                width: 2rem;
+                height: 2rem;
+            }
 
-                p {
-                    color: #f9f9f9;
-                    padding-top: 1.5%;
+            p {
+                color: #f9f9f9;
+                margin: 0 1rem
 
-                }
             }
         }
 
@@ -376,8 +388,8 @@ footer {
 
                     img {
                         border-radius: 50px;
-                        width: 12%;
-                        height: 12%;
+                        width:  3rem;
+                        height: 3rem;
                     }
 
                     p {

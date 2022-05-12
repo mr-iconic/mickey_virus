@@ -42,6 +42,7 @@ function showuser(user) {
   <img src="${user.photoURL}" >
   <p>${user.displayName}</p>
   `
+  document.getElementById("userdetail").style.display = "flex";
 }
 
 auth.onAuthStateChanged((user)=>{
