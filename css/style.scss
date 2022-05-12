@@ -396,6 +396,7 @@ body {
                 box-shadow: 0 0 10px white inset;
                 transform: rotate(360deg);
                 transition: 1s ease;
+                transform-origin: 100%;
             }
 
             .lightmode {
