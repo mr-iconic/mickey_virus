@@ -169,7 +169,8 @@ body header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2%;
+  margin-top: 3%;
+  margin-left: 3%;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
