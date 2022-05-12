@@ -44,6 +44,7 @@ const getpoint = document.querySelector(".getpoint");
 
 // this is used for form check whether it is fill or note
 
+getpoint.addEventListener("click", formchecker);
 
 function formchecker() {
 
@@ -78,4 +79,3 @@ function formchecker() {
       console.log("wrong");
    }
 }
-getpoint.addEventListener("click", formchecker);
