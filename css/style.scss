@@ -396,9 +396,9 @@ body {
                 box-shadow: 0 0 10px white inset;
                 transform: rotate(360deg);
                 transition: 3s ease;
-                animation: mymove 5s infinite;
+                animation: mymove 5s ease;
                 @keyframes mymove {
-                    100% {transform: rotate(360deg);}
+                    50% {transform: rotate(360deg);}
                   }
             }
 
