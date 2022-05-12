@@ -1,6 +1,9 @@
 var hem = document.getElementById("hemb");
 var x = document.getElementById("nav_bar");
 const el = document.getElementById("hemb");
+
+// this function is defined to change navbar into hemburger menu
+
 hem.addEventListener("click", function myfuntion1() {
    if (x.style.display === "block") {
       x.style.display = "none";
@@ -11,6 +14,9 @@ hem.addEventListener("click", function myfuntion1() {
       el.className = "hemburgerclose";
    }
 })
+
+// this function is define for switch  theme of the page
+
 var swt = document.getElementById("theme");
 swt.addEventListener("click", function function2() {
    if (swt.value === "light") {
@@ -26,6 +32,8 @@ swt.addEventListener("click", function function2() {
    }
 })
 
+// variables declared to target the form elements
+
 const target = document.querySelector("#targetgoal");
 const field = document.querySelector("#field");
 const checkbox = document.querySelector("#pc_c");
@@ -33,7 +41,12 @@ const expectedtime = document.querySelector("#ext_time");
 const timebox = document.querySelector("#e_time");
 const timetype = document.querySelector("#time");
 const getpoint = document.querySelector(".getpoint");
+
+// this is used for form check whether it is fill or note
+
+
 function formchecker() {
+
    const detail = {
       field: field.value,
       time: timebox.value + timetype.value
@@ -58,7 +71,7 @@ function formchecker() {
       b = 0;
    }
    if (a == 0 && b == 0) {
-      document.querySelector(".getpoint").innerHTML=`<a href="pages/loginpage.html">get to point</a>` ;
+      document.querySelector(".getpoint").innerHTML = `<a href="pages/loginpage.html">get to point</a>`;
       console.log("wright");
    }
    else {
