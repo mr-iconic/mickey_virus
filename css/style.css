@@ -491,7 +491,7 @@ body .darkmode {
   display: block;
   width: 60px;
   margin-top: 3%;
-  margin-left: 85%;
+  margin-left: 5%;
   padding: 20px 8px 20px 08px;
   font-weight: bold;
   border-radius: 30px;
@@ -585,7 +585,7 @@ body footer p {
     max-width: 75%;
   }
   body .darkmode {
-    margin-left: 85%;
+    margin-left: 5%;
   }
   body .lightmode {
     margin-left: 5%;
