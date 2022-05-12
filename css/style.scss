@@ -122,6 +122,7 @@ body {
                 li {
                     list-style: none;
                     margin-left: 4px;
+                    margin-right: 4px;
 
                     a {
                         text-decoration: none;
@@ -461,6 +462,7 @@ body {
 
                 ul {
                     flex-direction:row;
+                    margin-right: 0;
                 }
             }
         }

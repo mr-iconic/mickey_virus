@@ -201,6 +201,7 @@ body header .navbar ul {
 body header .navbar ul li {
   list-style: none;
   margin-left: 4px;
+  margin-right: 4px;
 }
 
 body header .navbar ul li a {
@@ -517,6 +518,7 @@ body footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-right: 0;
   }
   body main .htmltutorials {
     display: -webkit-box;
