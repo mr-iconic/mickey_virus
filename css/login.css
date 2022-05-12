@@ -506,6 +506,8 @@ body footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 2%;
+    margin-left: 0;
   }
   body header .navbar ul {
     -webkit-box-orient: horizontal;

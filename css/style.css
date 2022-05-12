@@ -138,7 +138,7 @@ body header .navbar {
   -webkit-box-shadow: 0 0 15px white inset;
           box-shadow: 0 0 15px white inset;
   border-radius: 10px;
-  margin-top: -1%;
+  margin-top: -2%;
   margin-left: 13%;
 }
 
@@ -556,6 +556,8 @@ body footer p {
   body header .nav {
     max-width: 100%;
     margin-bottom: 2%;
+    margin-left: 0;
+    margin-top: 2%;
   }
   body header .navbar {
     display: -webkit-box;
