@@ -419,7 +419,7 @@ body {
                 animation: mymove 2s infinite;
             }
             @keyframes mymove {
-                50% {transform: rotate(360deg);}
+                50% {transform: rotate(180deg);}
               }
         footer {
             
