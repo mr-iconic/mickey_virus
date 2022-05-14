@@ -73,7 +73,7 @@ function formchecker() {
    }
    if (a == 0 && b == 0) {
       document.querySelector("#getpoint").innerHTML = `<a href="pages/loginpage.html">get to point</a>`;
-      console.log("wright");
+      
    }
    else {
       console.log("wrong");

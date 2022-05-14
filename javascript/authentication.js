@@ -15,7 +15,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 var  fire = getFirestore(app);
 
-console.log("hello")
+
 
 const db = collection(fire ,"formdata")
 
