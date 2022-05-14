@@ -467,20 +467,7 @@ body main .form_box .leftarea .center_form .expected_time select option {
           box-shadow: 0 0 60px white inset;
 }
 
-body main .form_box .leftarea .getpoint {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1.2rem auto;
-}
-
-body main .form_box .leftarea .getpoint a {
+body main .form_box .leftarea #getpoint {
   background: #3d3a3a;
   color: #f7f3f3;
   text-decoration: none;
@@ -489,6 +476,7 @@ body main .form_box .leftarea .getpoint a {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 60px white inset;
           box-shadow: 0 0 60px white inset;
+  margin: 2em auto;
 }
 
 body .darkmode {

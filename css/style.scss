@@ -366,13 +366,8 @@ body {
 
                 }
 
-                .getpoint {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 1.2rem auto;
-
-                    a {
+                #getpoint {
+                   
                         background: rgb(61, 58, 58);
                         color: rgb(247, 243, 243);
                         text-decoration: none;
@@ -380,7 +375,8 @@ body {
                         font-weight: bold;
                         border-radius: 5px;
                         box-shadow: 0 0 60px white inset;
-                    }
+                        margin: 2em auto;
+                    
                 }
 
             }
