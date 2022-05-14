@@ -19,6 +19,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
 var x = document.getElementById("gsignin");
+document.getElementById("signout").style.display = "none";
 
 x.addEventListener('click', login)
 function login() {
