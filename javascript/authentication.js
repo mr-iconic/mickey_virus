@@ -19,11 +19,11 @@ var  fire = getFirestore(app);
 
 const db = collection(fire ,"formdata")
 
-let submitbt = document.getElementById('getpoint');
+// let submitbt = document.getElementById("getpoint");
 
-submitbt.addEventListener("click", form);
+// submitbt.addEventListener("click", form);
 
- async function form(){
+ async function form() {
 
   let field = document.getElementById('field').value
   let checbox = document.getElementById('pc_c').value
@@ -38,11 +38,61 @@ submitbt.addEventListener("click", form);
     time: time,
     format: type
     });
-
-    alert("your data is saved");
+    window.open('https://mickey-virus.netlify.app/pages/loginpage.html' , '_top');
+    
   } catch (e) {
     console.error("Error adding document: ", e);
   }
  } 
 
+// variables declared to target the form elements
+
+const target = document.querySelector("#targetgoal");
+const field = document.querySelector("#field");
+const checkbox = document.querySelector("#pc_c");
+const expectedtime = document.querySelector("#ext_time");
+const timebox = document.querySelector("#e_time");
+const timetype = document.querySelector("#time");
+const getpoint = document.querySelector("#getpoint");
+const submit = document.querySelector("#submit");
+
+// // this is used for form check whether it is fill or note
+
+
+function formchecker() {
   
+   const detail = {
+      field: field.value,
+      time: timebox.value + timetype.value
+   };
+   var a = 1;
+   var b = 1;
+   if (detail.field == "none") {
+      target.textContent = "please select an option";
+      target.style.color = "red";
+   }
+   else {
+      target.textContent = `Thankyou, for choose ${detail.field}`;
+      a = 0;
+   }
+   if (detail.time == "days" || detail.time == "0days") {
+      expectedtime.textContent = "please, enter some time";
+      expectedtime.style.color = "red";
+
+   }
+   else {
+      expectedtime.textContent = `you got best in ${timebox.value + " " + timetype.value}`;
+      b = 0;
+    }
+   if (a == 0 && b == 0) {
+      // document.querySelector("#getpoint").innerHTML = `<a href="pages/loginpage.html">get to point</a>`;
+      form();
+      
+      
+      
+    }
+    else {
+      console.log("wrong");
+    }
+  }
+  getpoint.addEventListener("click", formchecker);

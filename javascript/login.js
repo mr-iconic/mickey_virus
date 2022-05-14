@@ -18,15 +18,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
-document.getElementById("photo").style.display = "none";
-document.getElementById("signout").style.display = "none";
 var x = document.getElementById("gsignin");
 
 x.addEventListener('click', login)
 function login() {
   signInWithPopup(auth, provider).then(res => {
     showuser(res.user)
-
+    
     document.getElementById("gsignin").style.display = "none";
     document.getElementById("signout").style.display = "block";
 
@@ -35,21 +33,24 @@ function login() {
   }).catch(e => {
     console.log("error")
   })
-
+  
 }
 function showuser(user) {
+  
   document.querySelector("#userdetail").innerHTML = `
-  <img src="${user.photoURL}" >
+  <img src="${user.photoURL}"  >
   <p>${user.displayName}</p>
   `
   document.getElementById("userdetail").style.display = "flex";
 }
+
 
 auth.onAuthStateChanged((user) => {
   showuser(user);
   document.getElementById("gsignin").style.display = "none";
   document.getElementById("signout").style.display = "block";
 })
+document.getElementById("userdetail").style.display= "none";
 
 
 var y = document.getElementById("signout");
@@ -69,4 +70,5 @@ function signout() {
 }
 
 
-
+ 
+ 

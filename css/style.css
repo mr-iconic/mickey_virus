@@ -479,6 +479,10 @@ body main .form_box .leftarea #getpoint {
   margin: 2em auto;
 }
 
+body main .form_box .leftarea #getpoint a {
+  text-decoration: none;
+}
+
 body .darkmode {
   display: block;
   width: 60px;
