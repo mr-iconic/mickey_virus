@@ -21,7 +21,7 @@ const db = collection(fire ,"formdata")
 
 let submitbt = document.getElementById('getpoint');
 
-submitbt.addEventListener("click" , form);
+submitbt.addEventListener("click", form);
 
  async function form(){
 
@@ -38,10 +38,11 @@ submitbt.addEventListener("click" , form);
     time: time,
     format: type
     });
-    
+
     alert("your data is saved");
   } catch (e) {
     console.error("Error adding document: ", e);
   }
-}
+ } 
+
   
