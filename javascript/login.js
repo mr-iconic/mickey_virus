@@ -38,13 +38,15 @@ function login() {
   
 }
 function showuser(user) {
-  if((user.email).value == 'abhishekhacker.@gmail.com'){
-    document.getElementById("addif").style.display = "block";
-    console.log("admin");
-  }else{
-    document.getElementById("addif").style.display = "none";
-    console.log(" not admin");
-  }
+  var edata = user.email ;
+  console.log(edata);
+  // if((user.email).value == 'abhishekhacker.@gmail.com'){
+  //   document.getElementById("addif").style.display = "block";
+  //   console.log("admin");
+  // }else{
+  //   document.getElementById("addif").style.display = "none";
+  //   console.log(" not admin");
+  // }
   document.querySelector("#userdetail").innerHTML = `
   <img src="${user.photoURL}"  >
   <p>${user.displayName}</p>
