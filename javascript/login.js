@@ -40,7 +40,7 @@ function login() {
 function showuser(user) {
   var edata = user.email ;
   console.log(edata);
-  if( edata == 'abhishekhacker.@gmail.com'){
+  if( edata == "abhishekhacker.@gmail.com"){
     document.getElementById("addif").style.display = "block";
     console.log("admin");
   }else{
