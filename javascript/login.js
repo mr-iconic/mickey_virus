@@ -40,8 +40,10 @@ function login() {
 function showuser(user) {
   if(user.email == "abhishekhacker.@gmail.com"){
     document.getElementById("addif").style.display = "block";
+    console.log("admin");
   }else{
     document.getElementById("addif").style.display = "none";
+    console.log(" not admin");
   }
   document.querySelector("#userdetail").innerHTML = `
   <img src="${user.photoURL}"  >
