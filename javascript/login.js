@@ -29,7 +29,7 @@ function login() {
     
     document.getElementById("gsignin").style.display = "none";
     document.getElementById("signout").style.display = "block";
-
+    
 
 
   }).catch(e => {
@@ -39,9 +39,9 @@ function login() {
 }
 function showuser(user) {
   if(user.email == "abhishekhacker.@gmail.com"){
-    document.getElementById('addif').style.display = "block";
+    document.getElementById("addif").style.display = "block";
   }else{
-    document.getElementById('addif').style.display = "none";
+    document.getElementById("addif").style.display = "none";
   }
   document.querySelector("#userdetail").innerHTML = `
   <img src="${user.photoURL}"  >
