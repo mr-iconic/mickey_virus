@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin form</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body id="switchlight">
+    <header>
+        <nav>
+            <a href="#">MICKEY VIRUS</a>
+        </nav>
+        <div class="hemburger" id="hemb">
+            <div class="hem_line" id="topl"></div>
+            <div class="hem_line" id="middlel"></div>
+            <div class="hem_line" id="bottoml"></div>
+        </div>
+        <nav class="navbar" id="nav_bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Top Free Resource</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formbox">
+           <marquee behavior="#" direction="left">
+               FILL THE  DETAILS  OF  VIDEO  YOU  WANT TO ADD
+           </marquee>
+
+            <div>
+                <label for="#" id="url">Enter the embeded iframe of video</label>
+                <textarea id="urliframe" cols="6" rows="5"></textarea>
+            </div>
+            <div>
+                <label id="imageurl">Enter the logo URL</label>
+                <textarea id="urlimage" cols="4" rows="5"></textarea>
+
+            </div>
+            <div>
+                <label id="description">Enter the description of video</label>
+                <textarea id="describe" cols="4" rows="5"></textarea>
+            </div>
+
+            <div id="addframe">
+                <a href="#" id="submitframe">ADD VIDEO</a>
+            </div>
+
+        </div>
+    </main>
+    <input class="lightmode" id="theme" type="button" value="light">
+    <footer>
+
+
+        <p>
+            this site is created by abhishek tiwari
+        </p>
+    </footer>
+    <script src="../javascript/header_switch.js"></script>
+    <script type="module" src="../javascript/adminpage.js"></script>
+</body>
+
+</html>

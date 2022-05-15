@@ -20,6 +20,7 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
 var x = document.getElementById("gsignin");
 document.getElementById("signout").style.display = "none";
+document.getElementById('addif').style.display = "none";
 
 x.addEventListener('click', login)
 function login() {
@@ -37,7 +38,11 @@ function login() {
   
 }
 function showuser(user) {
-  
+  if(user.email == "abhishekhacker.@gmail.com"){
+    document.getElementById('addif').style.display = "block";
+  }else{
+    document.getElementById('addif').style.display = "none";
+  }
   document.querySelector("#userdetail").innerHTML = `
   <img src="${user.photoURL}"  >
   <p>${user.displayName}</p>

@@ -115,7 +115,6 @@ body header nav {
   padding-top: 6px;
   padding-bottom: 6px;
   font-size: 1.5em;
-  margin-bottom: 1%;
   -webkit-box-shadow: 0 0 60px white inset;
           box-shadow: 0 0 60px white inset;
   border-radius: 10px;
@@ -186,7 +185,7 @@ body main {
   max-width: 100%;
 }
 
-body main .form_box {
+body main .formbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,162 +195,12 @@ body main .form_box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  max-width: 80%;
-  border-radius: 10px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body main .form_box .rightarea {
-  display: none;
-  text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  margin: 0 auto;
-  margin-right: 0;
-  max-width: 60%;
-}
-
-body main .form_box .rightarea h3 {
-  max-width: 90%;
-  margin: 0 auto;
-  font-size: 1.1rem;
-}
-
-body main .form_box .rightarea p {
-  font-style: 1rem;
-  font-weight: bold;
-}
-
-body main .form_box .rightarea .line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 100%;
-  height: 2em;
-  margin: 0.7rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-body main .form_box .rightarea .line #right {
-  display: block;
-  margin: auto;
-  width: 40%;
-  height: 40%;
-  border-top-left-radius: 10px;
-  border-top: 1px solid #f9f9f9;
-}
-
-body main .form_box .rightarea .line #left {
-  display: block;
-  margin: auto;
-  width: 40%;
-  height: 40%;
-  border-top-right-radius: 10px;
-  border-top: 1px solid #f9f9f9;
-}
-
-body main .form_box .rightarea .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  max-width: 80%;
-  margin: auto;
-}
-
-body main .form_box .rightarea .middle .downarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  width: 90%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body main .form_box .rightarea .middle .downarea .rightside,
-body main .form_box .rightarea .middle .downarea .leftside {
-  text-align: center;
-  font-size: 0.8rem;
-  margin: auto;
-}
-
-body main .form_box .rightarea .middle .downarea .bottommiddle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body main .form_box .rightarea .middle .downarea .bottommiddle .top,
-body main .form_box .rightarea .middle .downarea .bottommiddle .bottom {
-  display: block;
-  height: 40%;
-  width: 0;
-  margin: auto;
-  border: 1.2px solid white;
-  -webkit-box-shadow: 1px 2px 1px white inset;
-          box-shadow: 1px 2px 1px white inset;
-}
-
-body main .form_box .rightarea .middle .downarea .bottommiddle .center {
-  margin: 0.5rem;
-}
-
-body main .form_box .rightarea .middle .downarea .bottommiddle .center a {
-  background: black;
-  -webkit-box-shadow: 0 0 50px white inset;
-          box-shadow: 0 0 50px white inset;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  color: #121111;
-  padding: 0.3rem;
-}
-
-body main .form_box .leftarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   margin: auto;
-  margin-right: 1.4rem;
-  max-width: 100%;
+  max-width: 95%;
   border-radius: 10px;
   border: 1px solid #2d37f7;
   -webkit-box-shadow: 0 0 15px #f4f4f6;
@@ -359,115 +208,33 @@ body main .form_box .leftarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body main .form_box .leftarea .head {
-  text-align: center;
-  margin: 1rem auto;
+body main .formbox marquee {
+  margin: 1em 1em;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body main .form_box .leftarea .head p {
-  font-size: 1.2em;
+body main .formbox label {
+  margin: 1em 0;
+  font-size: 1.2rem;
+  text-align: start;
   font-weight: bold;
 }
 
-body main .form_box .leftarea .head h1 {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-body main .form_box .leftarea label {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-body main .form_box .leftarea .center_form {
+body main .formbox div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90%;
+  margin: 1.5rem 5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1em 1.2rem;
-  max-width: 90%;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
-body main .form_box .leftarea .center_form .goal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1em 0;
-}
-
-body main .form_box .leftarea .center_form .goal select {
-  border-radius: 5px;
-  padding: 0.2rem;
-  font-size: 0.8rem;
-  background: #847c7c;
-  color: #0c0c0c;
-  -webkit-box-shadow: 0 0 15px white inset;
-          box-shadow: 0 0 15px white inset;
-  font-weight: bold;
-}
-
-body main .form_box .leftarea .center_form .goal select option {
-  background: #847c7c;
-  color: black;
-  font-weight: bold;
-}
-
-body main .form_box .leftarea .center_form .pc_confirmation p {
-  display: inline;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-body main .form_box .leftarea .center_form .pc_confirmation #pc_c {
-  margin-top: 2px;
-}
-
-body main .form_box .leftarea .center_form .expected_time {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 90%;
-  margin: 1em 0;
-}
-
-body main .form_box .leftarea .center_form .expected_time input,
-body main .form_box .leftarea .center_form .expected_time select {
-  border-radius: 5px;
-  max-width: 25%;
-  padding: 0.2rem;
-  background: #847c7c;
-  color: black;
-  -webkit-box-shadow: 0 0 15px white inset;
-          box-shadow: 0 0 15px white inset;
-  font-weight: bold;
-}
-
-body main .form_box .leftarea .center_form .expected_time input option,
-body main .form_box .leftarea .center_form .expected_time select option {
-  background: #847c7c;
-  color: black;
-  font-weight: bold;
-  -webkit-box-shadow: 0 0 60px white inset;
-          box-shadow: 0 0 60px white inset;
-}
-
-body main .form_box .leftarea #getpoint {
+body main .formbox #addframe {
   background: #3d3a3a;
   color: #f7f3f3;
   text-decoration: none;
@@ -479,9 +246,19 @@ body main .form_box .leftarea #getpoint {
   margin: 2em auto;
 }
 
-body main .form_box .leftarea #getpoint a {
+body main .formbox #addframe a {
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+body main .formbox #addframe:hover {
+  background-color: #6d1c06;
+}
+
+body main .formbox #addframe:hover a {
+  font-size: 1.4rem;
 }
 
 body .darkmode {
@@ -569,21 +346,6 @@ body footer p {
             flex-direction: row;
     margin-right: 0;
   }
-  body main {
-    max-width: 100%;
-  }
-  body main .form_box {
-    -webkit-box-shadow: 0 0 15px white inset;
-            box-shadow: 0 0 15px white inset;
-  }
-  body main .form_box .rightarea {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  body main .form_box .leftarea {
-    max-width: 75%;
-  }
   body .darkmode {
     margin-left: 5%;
   }
@@ -591,4 +353,4 @@ body footer p {
     margin-left: 5%;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=admin.css.map */
