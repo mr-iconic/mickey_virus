@@ -38,7 +38,7 @@ function login() {
   
 }
 function showuser(user) {
-  if(user.email == 'abhishekhacker.@gmail.com'){
+  if((user.email).value == 'abhishekhacker.@gmail.com'){
     document.getElementById("addif").style.display = "block";
     console.log("admin");
   }else{
