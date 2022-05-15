@@ -38,9 +38,10 @@ function login() {
   
 }
 function showuser(user) {
-  var edata = user.email ;
+  var edata =JSON.stringify(user.email);
+  var aedata =JSON.stringify("abhishekhacker.111@gmail.com");
   console.log(edata);
-  if( edata == "abhishekhacker.@gmail.com"){
+  if( edata == aedata){
     document.getElementById("addif").style.display = "block";
     console.log("admin");
   }else{
