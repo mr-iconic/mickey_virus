@@ -49,6 +49,10 @@ const db = collection(fire ,"adminform")
 
 let ilabel = document.getElementById('url')
 let iframe = document.getElementById('urliframe')
+let channel =document.getElementById('ytchannel')
+let channelname =document.getElementById('yt_channel_name')
+let video_link =document.getElementById('video_link')
+let yt_video_link =document.getElementById('yt_video_link')
 let limage = document.getElementById('imageurl')
 let  urlimage = document.getElementById('urlimage')
 let  ldesribe = document.getElementById('description')
@@ -64,10 +68,15 @@ function formchecker() {
       iframe: iframe.value,
       image: urlimage.value,
       describe: describe.value,
+      channelname: channelname.value,
+      yt_video_link: yt_video_link.value
    };
    var a = 1;
    var b = 1;
    var c = 1;
+   var d = 1;
+   var e = 1;
+
    if (detail.iframe == "none") {
       ilabel.textContent = "please enter iframe value";
       ilabel.style.color = "red";
@@ -75,6 +84,22 @@ function formchecker() {
    else {
       ilabel.textContent = `Thankyou `;
       a = 0;
+   }
+   if (detail.channelname == "none") {
+      channel.textContent = "please enter channel name";
+      channel.style.color = "red";
+   }
+   else {
+      channel.textContent = `Thankyou `;
+      d= 0;
+   }
+   if (detail.yt_video_link == "none") {
+      video_link.textContent = "please enter channel name";
+      video_link.style.color = "red";
+   }
+   else {
+      video_link.textContent = `Thankyou `;
+      e= 0;
    }
    if (detail.image == "none") {
       limage.textContent = "please enter iframe value";
@@ -93,7 +118,7 @@ function formchecker() {
       c = 0;
    }
   
-   if (a == 0 && b == 0 && c == 0) {
+   if (a == 0 && b == 0 && c == 0 && d == 0 && e == 0) {
       // document.querySelector("#getpoint").innerHTML = `<a href="pages/loginpage.html">get to point</a>`;
       form();
         
@@ -115,23 +140,23 @@ function formchecker() {
       describe: describe.value
    };
     document.getElementById('demovideo').innerHTML =` <div class="htmls"> 
-      ${detail.iframe}
+      ${iframe.value}
     <div>
         <div class="description">
 
             <div>
-                <a href="https://youtu.be/kUMe1FH4CHE">
+                <a href="${yt_video_link.value}">
 
-                    <img src="${detail.image}"
+                    <img src="${urlimage.value}"
                         alt="" srcset="">
                 </a>
             </div>
             <div>
-                <h1>kevin powwel</h1>
+                <h1>${channelname.value}</h1>
             </div>
         </div>
         <div>
-            <p>${detail.describe} </p>
+            <p>${describe.value} </p>
         </div>
     </div>
 </div>`
