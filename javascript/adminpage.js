@@ -96,9 +96,7 @@ function formchecker() {
    if (a == 0 && b == 0 && c == 0) {
       // document.querySelector("#getpoint").innerHTML = `<a href="pages/loginpage.html">get to point</a>`;
       form();
-      
-      
-      
+        
     }
     else {
       console.log("wrong");
@@ -110,16 +108,14 @@ function formchecker() {
  var demovideo = document.getElementById('demovideo');
 
  demovideo.addEventListener("click", showz);
- showz(){
+ function showz() {
    const detail = {
       iframe: iframe.value,
       image: urlimage.value,
-      describe: describe.value,
+      describe: describe.value
    };
-    document.getElementById('demovideo').innerHTML =` <div class="htmls">
-
-   ${detail.iframe}
-
+    document.getElementById('demovideo').innerHTML =` <div class="htmls"> 
+      ${detail.iframe}
     <div>
         <div class="description">
 
@@ -131,7 +127,7 @@ function formchecker() {
                 </a>
             </div>
             <div>
-                <h1>freeCodeCamp.org</h1>
+                <h1>kevin powwel</h1>
             </div>
         </div>
         <div>
