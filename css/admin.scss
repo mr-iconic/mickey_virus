@@ -199,6 +199,30 @@ body {
                   font-size: 1.4rem;
             }
         }
+            #demovideo {
+                   
+                background: rgb(61, 58, 58);
+                color: rgb(247, 243, 243);
+                text-decoration: none;
+                padding: 0.5rem;
+                font-weight: bold;
+                border-radius: 5px;
+                box-shadow: 0 0 60px white inset;
+                margin: 2em auto;
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            
+        }
+        #demovideo:hover{
+            background-color: #6d1c06;
+            a{
+                  font-size: 1.4rem;
+            }
+        }
         }
     
     }

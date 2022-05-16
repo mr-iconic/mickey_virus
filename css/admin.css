@@ -261,6 +261,33 @@ body main .formbox #addframe:hover a {
   font-size: 1.4rem;
 }
 
+body main .formbox #demovideo {
+  background: #3d3a3a;
+  color: #f7f3f3;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 60px white inset;
+          box-shadow: 0 0 60px white inset;
+  margin: 2em auto;
+}
+
+body main .formbox #demovideo a {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+body main .formbox #demovideo:hover {
+  background-color: #6d1c06;
+}
+
+body main .formbox #demovideo:hover a {
+  font-size: 1.4rem;
+}
+
 body .darkmode {
   display: block;
   width: 60px;

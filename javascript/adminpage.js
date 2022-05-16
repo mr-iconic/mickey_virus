@@ -105,3 +105,39 @@ function formchecker() {
     }
   }
   addframe.addEventListener("click", formchecker);
+
+
+ var demovideo = document.getElementById('demovideo');
+
+ demovideo.addEventListener("click", showz);
+ showz(){
+   const detail = {
+      iframe: iframe.value,
+      image: urlimage.value,
+      describe: describe.value,
+   };
+    document.getElementById('demovideo').innerHTML =` <div class="htmls">
+
+   ${detail.iframe}
+
+    <div>
+        <div class="description">
+
+            <div>
+                <a href="https://youtu.be/kUMe1FH4CHE">
+
+                    <img src="${detail.image}"
+                        alt="" srcset="">
+                </a>
+            </div>
+            <div>
+                <h1>freeCodeCamp.org</h1>
+            </div>
+        </div>
+        <div>
+            <p>${detail.describe} </p>
+        </div>
+    </div>
+</div>`
+
+ }
