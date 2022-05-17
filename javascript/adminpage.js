@@ -36,7 +36,9 @@ const db = collection(fire ,"adminform")
     const docRef = await addDoc(collection(fire, "adminform"), {
       iframe: iframe,
       urlimage: urlimage,
-      description : describe
+      description : describe,
+      channelname: channelname.value,
+      yt_video_link: yt_video_link.value
     });
     window.open('https://mickey-virus.netlify.app/pages/loginpage.html' , '_top');
     

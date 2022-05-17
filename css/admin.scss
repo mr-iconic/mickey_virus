@@ -151,27 +151,27 @@ body {
             align-items: center;
             flex-flow: column nowrap;
             margin: auto;
-            max-width: 95%;
+            max-width: 80%;
             border-radius: 10px;
             border: 1px solid rgb(45, 55, 247);
             box-shadow: 0 0 15px rgb(244, 244, 246);
             font-family: Arial, Helvetica, sans-serif;
             marquee{
                 margin: 0.8em 1em;
-                font-size: 2rem;
+                font-size: 1.4rem;
                 font-weight: bold;
                 font-family: Arial, Helvetica, sans-serif;
             }
             label{
-                 margin: 0.7rem 0;
+                 margin: 0.2rem 0;
                  font-size: 1.2rem;
                 text-align: start;
                 font-weight: bold;
             }
             div{
                 display: flex;
-                width: 90%;
-                margin: 0.5rem 5rem;
+                width: 80%;
+                margin: 0.5rem 2rem;
                 flex-flow: column;
             }
 
@@ -209,6 +209,7 @@ body {
                 border-radius: 5px;
                 box-shadow: 0 0 60px white inset;
                 margin: 0.2rem auto;
+                margin-bottom: 0.8rem;
                 a{
                     text-decoration: none;
                     font-weight: bold;
